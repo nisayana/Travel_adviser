@@ -1,6 +1,7 @@
 class LocationsController < ApplicationController
 
     def index
+        # byebug
         @locations = Location.all
         render json: @locations
     end

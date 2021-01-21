@@ -1,7 +1,5 @@
 class LikeSerializer < ActiveModel::Serializer
-  attributes :id, :traveler_name
+  
+  attributes :id
 
-  def traveler_name
-    self.object.traveler.name
-  end
 end

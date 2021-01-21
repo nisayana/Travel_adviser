@@ -27,8 +27,8 @@ sylwia = Traveler.create(name: "Sylwia", age: 24)
 
 #locations 
 
-bur = Location.create(name: "The Republic of Buryatia", address: "Russia, The Republic Of Buryatia", description: "The republic is located in the south-central region of Siberia along the eastern shore of Lake Baikal.", image_url: "https://avatars.mds.yandex.net/get-zen_doc/1064817/pub_5d11ad8c4b447200af838b17_5d11ae58b34feb00af5e0bc8/scale_2400")
-irk = Location.create(name: "Irkutsk region", address: "Russia, Irkutsk region", description: "Irkutsk region is located in southeastern Siberia in the basins of the Angara, Lena, and Nizhnyaya Tunguska Rivers.", image_url: "https://i.redd.it/3ezntqllrz221.jpg")
+bur = Location.create(name: "The Republic of Buryatia", description: "The republic is located in the south-central region of Siberia along the eastern shore of Lake Baikal.", image_url: "https://avatars.mds.yandex.net/get-zen_doc/1064817/pub_5d11ad8c4b447200af838b17_5d11ae58b34feb00af5e0bc8/scale_2400")
+irk = Location.create(name: "Irkutsk region", description: "Irkutsk region is located in southeastern Siberia in the basins of the Angara, Lena, and Nizhnyaya Tunguska Rivers.", image_url: "https://i.redd.it/3ezntqllrz221.jpg")
 
 
 #sightseeings

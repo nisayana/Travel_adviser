@@ -1,4 +1,4 @@
 class LocationSerializer < ActiveModel::Serializer
-  attributes :id, :name, :address, :description, :image_url
+  attributes :id, :name, :description, :image_url
   has_many :sightseeings
 end

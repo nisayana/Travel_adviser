@@ -6,6 +6,7 @@ class SightseeingsController < ApplicationController
     end
 
     def show 
+        byebug
         @sightseeing = Sightseeing.find(params[:id])
         render json: @sightseeing
     end
@@ -32,14 +33,15 @@ class SightseeingsController < ApplicationController
 
     def destroy
         @sightseeing = Sightseeing.find(params[:id])
-        @sightseeing.destroy(params[:id])
+        @sightseeing.destroy()
+        # render json: {message: "The sightseeing has been deleted", sightseeing: @sightseeing}
     end
 
 
     private
 
     def sightseeing_params
-        sightseeing_params = params.permit(:name, :description, :image_url, :location)
+        params.permit(:name, :description, :image_url, :location_id, :likes, :reviews)
     end
 
 end

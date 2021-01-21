@@ -9,14 +9,15 @@ Rails.application.routes.draw do
   #review
   get '/reviews', to: 'reviews#index'
   get '/reviews/:id', to: 'reviews#show'
-  # get '/reviews/new', to: 'reviews#new'
-  # post '/reviews', to: 'reviews#create'
+  get '/reviews/new', to: 'reviews#new'
+  post '/reviews', to: 'reviews#create'
   delete '/reviews/:id', to: 'reviews#delete'
 
   #like
   get '/likes', to: 'likes#index'
-
+  post '/likes', to: 'likes#create'
   #traveler
   get '/travelers/:id', to: 'travelers#show'
+  post '/login', to: 'travelers#login'
 
 end
