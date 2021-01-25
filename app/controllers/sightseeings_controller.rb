@@ -23,12 +23,9 @@ class SightseeingsController < ApplicationController
     end
 
     def update 
+        @sightseeing = Sightseeing.find(params[:id])
         @sightseeing.update(sightseeing_params)
-        if @sightseeing.save
-            render json: @sightseeing, status: :accepted
-        else
-            render json: {errors: @sightseeing.errors.full_messages}
-        end
+        render json: @sightseeing
     end
 
     def destroy
@@ -41,7 +38,7 @@ class SightseeingsController < ApplicationController
     private
 
     def sightseeing_params
-        params.permit(:name, :description, :image_url, :location_id, :likes, :reviews)
+        params.permit(:name, :description, :image_url, :location_id, :loves, :likes, :reviews)
     end
 
 end
