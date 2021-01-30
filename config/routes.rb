@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   #like
   get '/likes', to: 'likes#index'
   post '/likes', to: 'likes#create'
+
   #traveler
+  get '/travelers', to: 'travelers#index'
   get '/travelers/:id', to: 'travelers#show'
   post '/login', to: 'travelers#login'
 
