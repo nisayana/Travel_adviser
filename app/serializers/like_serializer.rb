@@ -4,4 +4,5 @@ class LikeSerializer < ActiveModel::Serializer
 
   has_one :traveler
   has_one :sightseeing
+
 end
