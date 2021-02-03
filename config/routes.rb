@@ -21,5 +21,6 @@ Rails.application.routes.draw do
   get '/travelers', to: 'travelers#index'
   get '/travelers/:id', to: 'travelers#show'
   post '/login', to: 'travelers#login'
+  post '/signup', to: 'travelers#signup'
 
 end
