@@ -1,27 +1,42 @@
-# README
+# Baikal Travel Guide :ocean: :national_park: :sunrise_over_mountains:
 
-https://banner2.cleanpng.com/20180708/vra/kisspng-lake-baikal-ancient-lake-accommodation-buryats-5b42a710f28705.4203372215310948009934.jpg
+Travel is always a good idea.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Features
+* Users can sign up or sign in.
+* Upon Sign in Users are taken to the Home page and gain access to their Profile
+* User is able to see a list of destinations
+* Users can add Destinations to their bucketlist
+* Users can Review Destinations
+* Users can Delete, Bucketlist Items and Reviews
 
-Things you may want to cover:
+### Tech Stack
+This web app is built with the following:
 
-* Ruby version
+Backend
 
-* System dependencies
+* Ruby [2.6.1]
+* Rails [~> 6.0.2] - MVC web framework used as an API
+* Active Model Serializers [~> 0.10.0] - Serializing API routes to JSON
+* PostgreSQL [>= 0.18, < 2.0] - Database
 
-* Configuration
+[Front End](https://github.com/nisayana/travel_frontend)
 
-* Database creation
+* Vanilla JavaScript [ES6]
+* Custom CSS3 styling
 
-* Database initialization
+Installation
+Backend Installation:
 
-* How to run the test suite
+* Clone [backend](https://github.com/nisayana/travel_backend) repo to local machine git clone <backend-repo-url>
+* run bundle install to install required dependencies
+* run rails db:create to create a database locally.
+* run rails db:migrate to create tables into the database.
+* run rails db:seed to create seed data.
+* run rails s to run the server.
 
-* Services (job queues, cache servers, search engines, etc.)
+Frontend Installation:
 
-* Deployment instructions
-
-* ...
-
+* Clone this repo to your local machine git clone <this-repo-url>
+* Ensure Baikal Travel Guide-API is running locally on http://localhost:3000/
+* run open index.html on termial.
